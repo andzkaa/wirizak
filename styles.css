@@ -21,7 +21,7 @@
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;font-size:clamp(15px,0.55vw + 13.6px,18px)}
 body{
   font-family:var(--font);
   background:var(--bg);
@@ -33,7 +33,7 @@ img{max-width:100%;display:block}
 a{color:inherit;text-decoration:none}
 h1,h2,h3,h4{font-family:var(--display);line-height:1.12;letter-spacing:-.02em}
 
-.container{width:min(var(--container),92vw);margin-inline:auto}
+.container{width:min(var(--container),100% - 2 * clamp(1rem,5vw,2.5rem));margin-inline:auto}
 .grad{
   background:linear-gradient(100deg,var(--brand),var(--accent));
   -webkit-background-clip:text;background-clip:text;color:transparent;
@@ -121,8 +121,8 @@ h1,h2,h3,h4{font-family:var(--display);line-height:1.12;letter-spacing:-.02em}
 .section__head h2{font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:1rem}
 .section__head p{color:var(--muted);font-size:1.05rem}
 
-/* cards */
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+/* cards — auto-scaling responsive container grid */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));gap:1.4rem}
 .card{
   background:linear-gradient(180deg,var(--surface),var(--bg-2));
   border:1px solid var(--line);border-radius:var(--radius);padding:2rem 1.8rem;
@@ -187,6 +187,32 @@ h1,h2,h3,h4{font-family:var(--display);line-height:1.12;letter-spacing:-.02em}
 .pill{display:inline-block;padding:.2rem .7rem;border-radius:999px;font-size:.8rem;font-weight:700}
 .pill--ok{background:rgba(52,211,153,.15);color:var(--ok)}
 
+/* ============ ZESPÓŁ / PERSON PHOTOS ============ */
+.team{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:1.6rem;max-width:760px;margin-inline:auto}
+.member{
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;text-align:center;transition:.3s ease;
+}
+.member:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:var(--accent)}
+/* Reusable person-photo frame.
+   Desktop: 4:3. Mobile: portrait 5:4 (vertical), object centered. */
+.member__photo{
+  position:relative;width:100%;aspect-ratio:4/3;overflow:hidden;
+  background:linear-gradient(160deg,var(--surface-2),var(--bg-2));
+  display:grid;place-items:center;
+}
+.person-photo{
+  position:absolute;inset:0;width:100%;height:100%;
+  object-fit:cover;object-position:center center;   /* center middle */
+}
+.member__placeholder{
+  font-family:var(--display);font-weight:800;font-size:2rem;color:var(--accent);
+  opacity:.55;letter-spacing:.04em;
+}
+.member figcaption{padding:1.1rem 1rem 1.4rem;display:grid;gap:.25rem}
+.member figcaption b{font-family:var(--display);font-size:1.1rem}
+.member figcaption span{color:var(--muted);font-size:.86rem}
+
 /* ============ CONTACT ============ */
 .section--contact{background:
   radial-gradient(circle at 10% 10%,rgba(34,211,238,.1),transparent 40%),var(--bg-2)}
@@ -239,7 +265,6 @@ h1,h2,h3,h4{font-family:var(--display);line-height:1.12;letter-spacing:-.02em}
 
 /* ============ RESPONSIVE ============ */
 @media (max-width:960px){
-  .cards{grid-template-columns:repeat(2,1fr)}
   .ampio,.koparka,.about,.contact,.footer__inner{grid-template-columns:1fr}
   .koparka__media{order:2}
   .hero__stats{grid-template-columns:repeat(2,1fr)}
@@ -258,8 +283,9 @@ h1,h2,h3,h4{font-family:var(--display);line-height:1.12;letter-spacing:-.02em}
   .nav__burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
   .nav__burger.open span:nth-child(2){opacity:0}
   .nav__burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-  .cards{grid-template-columns:1fr}
   .hero{padding-top:8.5rem}
+  /* person photos go portrait 5:4 (vertical) and stay centered on mobile */
+  .member__photo{aspect-ratio:4/5}
   .info__grid{grid-template-columns:1fr}
   .footer__cols{grid-template-columns:1fr 1fr}
 }

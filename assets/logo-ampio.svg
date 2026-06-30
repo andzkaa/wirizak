@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 160" role="img" aria-label="Ampio">
+  <defs>
+    <linearGradient id="amp-g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F4796B"/>
+      <stop offset="1" stop-color="#EE5B4D"/>
+    </linearGradient>
+  </defs>
+  <!-- mark -->
+  <path d="M58 24 C92 24 108 52 100 92 C94 122 70 138 46 132 C24 127 16 104 22 78 C28 50 36 24 58 24 Z" fill="url(#amp-g)"/>
+  <path d="M36 108 C40 92 52 88 64 96 C56 118 44 124 36 108 Z" fill="#F2A03D"/>
+  <path d="M34 110 C44 100 56 100 66 96 C58 104 46 110 34 110 Z" fill="#ffffff" opacity="0.9"/>
+  <!-- wordmark -->
+  <text x="120" y="108" font-family="'Trebuchet MS', Arial, sans-serif" font-weight="700" font-size="78" fill="#2b2b2b">ampio</text>
+  <text x="332" y="60" font-family="Arial, sans-serif" font-size="18" fill="#2b2b2b">™</text>
+</svg>

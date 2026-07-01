@@ -1,396 +1,367 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WIR&amp;ZAK Sp. z o.o. — Instalacje elektryczne, fotowoltaika i automatyka budynkowa | Szczecin</title>
-  <meta name="description" content="WIR&ZAK Sp. z o.o. — szczecińska firma elektryczna. Kompleksowe instalacje elektryczne, fotowoltaika, automatyka budynkowa (autoryzowany instalator Ampio) oraz usługi minikoparką.">
-  <meta name="keywords" content="elektryk Szczecin, instalacje elektryczne, fotowoltaika Szczecin, automatyka budynkowa, smart home, Ampio, minikoparka Szczecin">
-  <meta name="author" content="WIR&ZAK Sp. z o.o.">
-  <meta name="theme-color" content="#0b1120">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="WIR&ZAK Sp. z o.o. — Elektryka &amp; Automatyka budynkowa">
-  <meta property="og:description" content="Instalacje elektryczne, fotowoltaika i automatyka budynkowa ze Szczecina. Autoryzowany instalator Ampio.">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="pl_PL">
-
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-weight='900'>⚡</text></svg>">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Electrician",
-    "name": "WIR&ZAK Sp. z o.o.",
-    "image": "assets/logo-wirizak.svg",
-    "description": "Kompleksowe instalacje elektryczne, fotowoltaika i automatyka budynkowa. Autoryzowany instalator Ampio. Usługi minikoparką.",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "ul. Brylantowa 4",
-      "postalCode": "70-895",
-      "addressLocality": "Szczecin",
-      "addressCountry": "PL"
-    },
-    "email": "wirizak@gmail.com",
-    "telephone": ["+48501666990", "+48575860310"],
-    "areaServed": "Szczecin i okolice",
-    "vatID": "PL9552543252",
-    "taxID": "9552543252",
-    "knowsAbout": ["instalacje elektryczne", "fotowoltaika", "automatyka budynkowa", "smart home Ampio", "usługi minikoparką"]
-  }
-  </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WIR&amp;ZAK Sp. z o.o. — Elektryka, fotowoltaika i automatyka budynkowa | Szczecin</title>
+<meta name="description" content="WIR&amp;ZAK Sp. z o.o. to doświadczona firma elektryczna ze Szczecina. Instalacje elektryczne, hale przemysłowe, fotowoltaika, automatyka budynkowa, autoryzowany instalator Ampio oraz usługi minikoparką.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- ====== NAV ====== -->
-  <header class="nav" id="nav">
-    <div class="container nav__inner">
-      <a href="#hero" class="nav__logo" aria-label="WIR&ZAK strona główna">
-        <span class="nav__mark">WIR<span class="amp">&amp;</span>ZAK</span>
-        <span class="nav__sub">elektryka &amp; automatyka</span>
+<div class="wz-page">
+
+  <!-- ============ HEADER ============ -->
+  <header class="wz-header">
+    <div class="wz-container wz-header-inner">
+      <a href="#top" class="wz-logo-link">
+        <img src="assets/wirzak-logo-white.png" alt="WIR&amp;ZAK">
       </a>
-      <nav class="nav__links" id="navLinks">
+      <nav class="wz-navlinks">
         <a href="#uslugi">Usługi</a>
         <a href="#ampio">Ampio</a>
-        <a href="#koparka">Minikoparka</a>
-        <a href="#o-firmie">O firmie</a>
-        <a href="#zespol">Zespół</a>
-        <a href="#kontakt" class="btn btn--small">Kontakt</a>
+        <a href="#minikoparka">Minikoparka</a>
+        <a href="#firma">O firmie</a>
+        <a href="#kontakt">Kontakt</a>
       </nav>
-      <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+      <a href="tel:+48501666990" class="wz-cta-phone">
+        <span class="wz-cta-dot"></span>
+        501 666 990
+      </a>
     </div>
   </header>
 
-  <!-- ====== HERO ====== -->
-  <section class="hero" id="hero">
-    <div class="hero__grid" aria-hidden="true"></div>
-    <div class="hero__glow" aria-hidden="true"></div>
-    <canvas class="hero__circuit" id="circuit" aria-hidden="true"></canvas>
+  <!-- ============ HERO ============ -->
+  <section id="top" class="wz-hero">
+    <svg class="wz-hero-svg" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice">
+      <g fill="none" stroke="#2a2e36" stroke-width="1.4">
+        <path class="wz-trace" d="M0 140 H420 V60 H760" stroke="#3a4150"></path>
+        <path class="wz-trace" d="M1200 240 H840 V360 H520 V300 H140" stroke="#3a4150"></path>
+        <path class="wz-trace" d="M0 500 H300 V620 H700" stroke="#3a4150"></path>
+        <path d="M980 700 V520 H1120 V360"></path>
+        <path d="M60 700 V560 H200"></path>
+      </g>
+      <g fill="#f4a63c">
+        <circle class="wz-node" cx="420" cy="60" r="5"></circle>
+        <circle class="wz-node" cx="760" cy="60" r="5" style="animation-delay: .6s;"></circle>
+        <circle class="wz-node" cx="140" cy="300" r="5" style="animation-delay: 1.1s;"></circle>
+        <circle class="wz-node" cx="700" cy="620" r="5" style="animation-delay: 1.6s;"></circle>
+        <circle class="wz-node" cx="1120" cy="360" r="5" style="animation-delay: .3s;"></circle>
+      </g>
+    </svg>
+    <div class="wz-hero-glow"></div>
 
-    <div class="container hero__content">
-      <span class="badge"><span class="dot"></span> Szczecin · Spółka aktywna od 2020</span>
-      <h1 class="hero__title">
-        Instalacje elektryczne,<br>
-        <span class="grad">fotowoltaika</span> i <span class="grad">automatyka budynkowa</span>
-      </h1>
-      <p class="hero__lead">
-        WIR&amp;ZAK Sp. z o.o. to doświadczona szczecińska firma elektryczna. Realizujemy
-        instalacje dla domów, obiektów komercyjnych i hal przemysłowych — stawiając na jakość,
-        nowoczesne technologie i inteligentne sterowanie budynkiem.
-      </p>
-      <div class="hero__cta">
-        <a href="#kontakt" class="btn btn--primary">Bezpłatna wycena</a>
-        <a href="#uslugi" class="btn btn--ghost">Zobacz usługi</a>
-      </div>
-      <div class="hero__partner">
-        <span>Autoryzowany instalator</span>
-        <img src="assets/logo-ampio.svg" alt="Ampio — systemy automatyki budynkowej" class="hero__ampio">
-      </div>
-    </div>
-
-    <div class="hero__stats container">
-      <div class="stat"><b>15+</b><span>lat doświadczenia zespołu</span></div>
-      <div class="stat"><b>100%</b><span>kompleksowa realizacja</span></div>
-      <div class="stat"><b>Ampio</b><span>autoryzowany instalator</span></div>
-      <div class="stat"><b>Szczecin</b><span>i okolice</span></div>
-    </div>
-  </section>
-
-  <!-- ====== USŁUGI ====== -->
-  <section class="section" id="uslugi">
-    <div class="container">
-      <div class="section__head reveal">
-        <span class="eyebrow">Co robimy</span>
-        <h2>Kompleksowe usługi elektryczne</h2>
-        <p>Od projektu, przez montaż, po uruchomienie i serwis — dla klientów indywidualnych i biznesowych.</p>
-      </div>
-
-      <div class="cards">
-        <article class="card reveal">
-          <div class="card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg>
-          </div>
-          <h3>Instalacje elektryczne</h3>
-          <p>Kompleksowe instalacje w domach jednorodzinnych oraz większych obiektach — od rozdzielnic po pełne okablowanie i pomiary.</p>
-        </article>
-
-        <article class="card reveal">
-          <div class="card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M3 9h18M9 4l-2 12M15 4l2 12M12 16v4M8 20h8"/></svg>
-          </div>
-          <h3>Fotowoltaika</h3>
-          <p>Projekt i montaż instalacji PV — niższe rachunki za prąd i niezależność energetyczna dla domu i firmy.</p>
-        </article>
-
-        <article class="card reveal">
-          <div class="card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9v11h14V9"/><circle cx="12" cy="14" r="2.2"/><path d="M12 11.8V14M12 16.2v0"/></svg>
-          </div>
-          <h3>Automatyka budynkowa</h3>
-          <p>Inteligentne systemy sterowania światłem, ogrzewaniem, roletami i bezpieczeństwem — komfort i oszczędność.</p>
-        </article>
-
-        <article class="card reveal">
-          <div class="card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 20h18M5 20V9l5-4 5 4v11M9 20v-5h2v5"/><path d="M16 20v-7l3-2v9"/></svg>
-          </div>
-          <h3>Hale i obiekty przemysłowe</h3>
-          <p>Większe projekty dla obiektów komercyjnych i przemysłowych, w tym hale wymagające zaawansowanych rozwiązań technicznych.</p>
-        </article>
-
-        <article class="card reveal">
-          <div class="card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg>
-          </div>
-          <h3>Smart Home</h3>
-          <p>Sterowanie budynkiem z telefonu, sceny świetlne, scenariusze automatyczne i integracja urządzeń.</p>
-        </article>
-
-        <article class="card reveal">
-          <div class="card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 17h12l3-5-4-1-2-4H8z"/><circle cx="7" cy="18" r="2"/><circle cx="16" cy="18" r="2"/><path d="M14 8h4l2 4"/></svg>
-          </div>
-          <h3>Usługi minikoparką</h3>
-          <p>Wykopy pod instalacje, przyłącza i fundamenty. Sprawnie i precyzyjnie nowoczesnym sprzętem.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ====== AMPIO ====== -->
-  <section class="section section--ampio" id="ampio">
-    <div class="container ampio">
-      <div class="ampio__text reveal">
-        <span class="eyebrow">Partner technologiczny</span>
-        <h2>Autoryzowany instalator <span class="grad">Ampio</span></h2>
-        <p>
-          Jako autoryzowany instalator Ampio zapewniamy profesjonalny montaż i konfigurację
-          inteligentnych systemów sterowania budynkiem. To gwarancja kompetencji, niezawodności
-          i pełnego wsparcia w zakresie smart home.
+    <div class="wz-container wz-hero-grid">
+      <div>
+        <div class="wz-badge">
+          <span class="wz-badge-dot"></span>
+          Szczecin · od 2020
+        </div>
+        <h1 class="wz-h1">
+          Elektryka, fotowoltaika<br>i automatyka<br><span class="wz-accent">budynkowa.</span>
+        </h1>
+        <p class="wz-hero-lead">
+          WIR&amp;ZAK Sp. z o.o. to doświadczona firma elektryczna ze Szczecina. Realizujemy kompleksowe instalacje dla domów, obiektów komercyjnych i hal przemysłowych — jako <strong>autoryzowany instalator Ampio</strong>.
         </p>
-        <ul class="ampio__list">
-          <li>Certyfikowana wiedza i doświadczenie</li>
-          <li>Skalowalny system — od mieszkania po duży obiekt</li>
-          <li>Sterowanie światłem, klimatem, roletami i bezpieczeństwem</li>
-          <li>Niezawodna automatyka oparta na magistrali</li>
-        </ul>
-        <a href="#kontakt" class="btn btn--primary">Zapytaj o smart home</a>
-      </div>
-      <div class="ampio__card reveal">
-        <img src="assets/logo-ampio.svg" alt="Ampio" class="ampio__logo">
-        <div class="ampio__chip">Authorized Installer</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ====== MINIKOPARKA ====== -->
-  <section class="section section--koparka" id="koparka">
-    <div class="container koparka">
-      <div class="koparka__media reveal" aria-hidden="true">
-        <svg viewBox="0 0 200 160" class="koparka__svg">
-          <rect x="0" y="135" width="200" height="6" rx="3" fill="currentColor" opacity=".25"/>
-          <g fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
-            <rect x="60" y="80" width="55" height="38" rx="4"/>
-            <path d="M72 80 V62 h26 v18"/>
-            <path d="M98 95 L150 60 L170 70 L150 95"/>
-            <path d="M150 95 l-6 18 14 -2 4 -12z"/>
-            <ellipse cx="88" cy="128" rx="40" ry="13"/>
-            <circle cx="66" cy="128" r="7"/><circle cx="88" cy="128" r="7"/><circle cx="110" cy="128" r="7"/>
-          </g>
-        </svg>
-      </div>
-      <div class="koparka__text reveal">
-        <span class="eyebrow">Roboty ziemne</span>
-        <h2>Usługi minikoparką</h2>
-        <p>
-          Uzupełniamy nasze instalacje robotami ziemnymi. Wykonujemy wykopy pod kable i przyłącza
-          elektryczne, instalacje PV, odwodnienia i drobne prace fundamentowe — nowoczesnym,
-          zwrotnym sprzętem, który sprawdza się nawet w trudno dostępnych miejscach.
-        </p>
-        <div class="koparka__tags">
-          <span>Wykopy pod przyłącza</span>
-          <span>Prace przy instalacjach</span>
-          <span>Niwelacja terenu</span>
-          <span>Fundamenty</span>
+        <div class="wz-btn-row">
+          <a href="#kontakt" class="wz-btn-primary">Bezpłatna wycena →</a>
+          <a href="#uslugi" class="wz-btn-secondary">Zobacz usługi</a>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ====== O FIRMIE ====== -->
-  <section class="section" id="o-firmie">
-    <div class="container">
-      <div class="section__head reveal">
-        <span class="eyebrow">O firmie</span>
-        <h2>Solidny partner ze Szczecina</h2>
-        <p>WIR&amp;ZAK Sp. z o.o. — doświadczenie, jakość wykonania i nowoczesne technologie w jednym.</p>
-      </div>
-
-      <div class="about">
-        <div class="about__intro reveal">
-          <p>
-            Realizujemy zarówno mniejsze instalacje w domach jednorodzinnych, jak i większe projekty
-            dla obiektów komercyjnych oraz przemysłowych. Łączymy klasyczną elektrykę z fotowoltaiką
-            i nowoczesną automatyką budynkową, dbając o jakość każdego etapu prac.
-          </p>
-        </div>
-
-        <div class="info reveal">
-          <h3>Dane rejestrowe</h3>
-          <dl class="info__grid">
-            <div><dt>Pełna nazwa</dt><dd>WIR&amp;ZAK Spółka z ograniczoną odpowiedzialnością</dd></div>
-            <div><dt>Siedziba</dt><dd>ul. Brylantowa 4, 70-895 Szczecin</dd></div>
-            <div><dt>KRS</dt><dd>0000852215</dd></div>
-            <div><dt>NIP</dt><dd>9552543252</dd></div>
-            <div><dt>REGON</dt><dd>386630390</dd></div>
-            <div><dt>PKD</dt><dd>43.21.Z — instalacje elektryczne</dd></div>
-            <div><dt>Data rejestracji</dt><dd>28 lipca 2020 r.</dd></div>
-            <div><dt>Status</dt><dd><span class="pill pill--ok">Aktywna</span></dd></div>
-          </dl>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ====== ZESPÓŁ ====== -->
-  <section class="section section--ampio" id="zespol">
-    <div class="container">
-      <div class="section__head reveal">
-        <span class="eyebrow">Zespół</span>
-        <h2>Ludzie, którzy za tym stoją</h2>
-        <p>Doświadczeni fachowcy odpowiedzialni za jakość każdej realizacji.</p>
-      </div>
-
-      <div class="team">
-        <!-- Aby dodać zdjęcie: wgraj plik do assets/ i ustaw nazwę w atrybucie src.
-             Zdjęcia osób: zalecane pionowe (portret), min. 800x1000 px. -->
-        <figure class="member reveal">
-          <div class="member__photo">
-            <img src="assets/zespol-wiraszka.jpg" alt="Grzegorz Wiraszka" class="person-photo" loading="lazy" onerror="this.remove()">
-            <span class="member__placeholder" aria-hidden="true">GW</span>
+        <div class="wz-stats">
+          <div>
+            <div class="wz-stat-num">5+</div>
+            <div class="wz-stat-label">lat doświadczenia</div>
           </div>
-          <figcaption>
-            <b>Grzegorz Wiraszka</b>
-            <span>Zarząd · Wspólnik</span>
-          </figcaption>
-        </figure>
-
-        <figure class="member reveal">
-          <div class="member__photo">
-            <img src="assets/zespol-zakrocki.jpg" alt="Arkadiusz Zakrocki" class="person-photo" loading="lazy" onerror="this.remove()">
-            <span class="member__placeholder" aria-hidden="true">AZ</span>
+          <div class="wz-stat-divider"></div>
+          <div>
+            <div class="wz-stat-num">Dom → Hala</div>
+            <div class="wz-stat-label">każda skala inwestycji</div>
           </div>
-          <figcaption>
-            <b>Arkadiusz Zakrocki</b>
-            <span>Zarząd · Wspólnik</span>
-          </figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <!-- ====== KONTAKT ====== -->
-  <section class="section section--contact" id="kontakt">
-    <div class="container contact">
-      <div class="contact__text reveal">
-        <span class="eyebrow">Kontakt</span>
-        <h2>Porozmawiajmy o Twoim projekcie</h2>
-        <p>Bezpłatnie wycenimy instalację elektryczną, fotowoltaikę, automatykę budynkową lub roboty ziemne.</p>
-
-        <div class="contact__items">
-          <a class="contact__item" href="tel:+48501666990">
-            <span class="contact__ico">☎</span>
-            <span><b>501 666 990</b><small>Zadzwoń</small></span>
-          </a>
-          <a class="contact__item" href="tel:+48575860310">
-            <span class="contact__ico">☎</span>
-            <span><b>575 860 310</b><small>Zadzwoń</small></span>
-          </a>
-          <a class="contact__item" href="mailto:wirizak@gmail.com">
-            <span class="contact__ico">✉</span>
-            <span><b>wirizak@gmail.com</b><small>Napisz do nas</small></span>
-          </a>
-          <div class="contact__item">
-            <span class="contact__ico">📍</span>
-            <span><b>ul. Brylantowa 4</b><small>70-895 Szczecin</small></span>
+          <div class="wz-stat-divider"></div>
+          <div>
+            <div class="wz-stat-num wz-accent">Ampio</div>
+            <div class="wz-stat-label">autoryzowany instalator</div>
           </div>
         </div>
       </div>
 
-      <form class="contact__form reveal" id="contactForm" novalidate>
-        <div class="field">
-          <label for="name">Imię i nazwisko</label>
-          <input type="text" id="name" name="name" required placeholder="Jan Kowalski">
+      <!-- smart-home control card -->
+      <div>
+        <div class="wz-panel">
+          <div class="wz-panel-head">
+            <div class="wz-panel-title">Panel budynku</div>
+            <span class="wz-panel-online"><span class="wz-panel-online-dot"></span>online</span>
+          </div>
+          <div class="wz-panel-grid">
+            <div class="wz-panel-tile">
+              <div class="wz-panel-tile-label">Oświetlenie</div>
+              <div class="wz-panel-tile-row">
+                <span class="wz-panel-tile-value">Salon</span>
+                <span class="wz-toggle on"><span class="wz-toggle-knob"></span></span>
+              </div>
+            </div>
+            <div class="wz-panel-tile">
+              <div class="wz-panel-tile-label">Rolety</div>
+              <div class="wz-panel-tile-row">
+                <span class="wz-panel-tile-value">70%</span>
+                <span class="wz-toggle off"><span class="wz-toggle-knob"></span></span>
+              </div>
+            </div>
+            <div class="wz-panel-tile span2">
+              <div class="wz-panel-tile-headrow">
+                <div class="wz-panel-tile-label" style="margin-bottom:0;">Fotowoltaika · produkcja</div>
+                <div class="wz-panel-pv-value">4,8 kW</div>
+              </div>
+              <div class="wz-bars">
+                <span style="height:30%"></span>
+                <span style="height:55%"></span>
+                <span style="height:45%"></span>
+                <span class="on" style="height:80%"></span>
+                <span class="on" style="height:100%"></span>
+                <span class="on" style="height:72%"></span>
+                <span style="height:60%"></span>
+                <span style="height:40%"></span>
+              </div>
+            </div>
+            <div class="wz-panel-tile span2 wz-panel-tile-flex">
+              <div>
+                <div class="wz-panel-tile-label">Temperatura</div>
+                <div class="wz-panel-tile-value">21,5°C</div>
+              </div>
+              <div class="wz-temp-controls">
+                <span class="wz-temp-btn minus">−</span>
+                <span class="wz-temp-btn plus">+</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="field">
-          <label for="phone">Telefon</label>
-          <input type="tel" id="phone" name="phone" required placeholder="500 000 000">
-        </div>
-        <div class="field">
-          <label for="topic">Czego dotyczy zapytanie?</label>
-          <select id="topic" name="topic">
-            <option>Instalacja elektryczna</option>
-            <option>Fotowoltaika</option>
-            <option>Automatyka budynkowa / Ampio</option>
-            <option>Hala / obiekt przemysłowy</option>
-            <option>Usługi minikoparką</option>
-            <option>Inne</option>
-          </select>
-        </div>
-        <div class="field">
-          <label for="msg">Wiadomość</label>
-          <textarea id="msg" name="msg" rows="4" placeholder="Opisz krótko swój projekt..."></textarea>
-        </div>
-        <button type="submit" class="btn btn--primary btn--block">Wyślij zapytanie</button>
-        <p class="form__note" id="formNote" role="status"></p>
-      </form>
+      </div>
     </div>
   </section>
 
-  <!-- ====== FOOTER ====== -->
-  <footer class="footer">
-    <div class="container footer__inner">
-      <div class="footer__brand">
-        <span class="nav__mark">WIR<span class="amp">&amp;</span>ZAK</span>
-        <p>Elektryka &amp; automatyka budynkowa — Szczecin</p>
+  <!-- ============ USŁUGI ============ -->
+  <section id="uslugi" class="wz-section wz-section-dark">
+    <div class="wz-container">
+      <div class="wz-section-head">
+        <div class="wz-eyebrow">Zakres usług</div>
+        <h2 class="wz-h2">Kompleksowo — od gniazdka po inteligentny budynek.</h2>
       </div>
-      <div class="footer__cols">
-        <div>
-          <h4>Usługi</h4>
-          <a href="#uslugi">Instalacje elektryczne</a>
-          <a href="#uslugi">Fotowoltaika</a>
-          <a href="#ampio">Automatyka / Ampio</a>
-          <a href="#koparka">Minikoparka</a>
+      <div class="wz-services-grid">
+
+        <div class="wz-service-card">
+          <div class="wz-service-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#f4a63c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M13 2 3 14h7l-1 8 10-12h-7z"></path>
+            </svg>
+          </div>
+          <h3 class="wz-service-title">Instalacje elektryczne</h3>
+          <p class="wz-service-desc">Kompleksowe instalacje w domach jednorodzinnych i mieszkaniach — od projektu, przez rozdzielnice, po pomiary i odbiory.</p>
         </div>
-        <div>
-          <h4>Firma</h4>
-          <a href="#o-firmie">O firmie</a>
+
+        <div class="wz-service-card">
+          <div class="wz-service-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#f4a63c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 21V8l6-4 6 4v13"></path>
+              <path d="M15 21V11l6 4v6"></path>
+              <path d="M3 21h18"></path>
+            </svg>
+          </div>
+          <h3 class="wz-service-title">Obiekty i hale przemysłowe</h3>
+          <p class="wz-service-desc">Większe projekty dla obiektów komercyjnych i przemysłowych, w tym hale wymagające zaawansowanych rozwiązań technicznych.</p>
+        </div>
+
+        <div class="wz-service-card">
+          <div class="wz-service-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#f4a63c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"></path>
+            </svg>
+          </div>
+          <h3 class="wz-service-title">Fotowoltaika</h3>
+          <p class="wz-service-desc">Projekt i montaż instalacji fotowoltaicznych — obniż rachunki i uniezależnij budynek od cen energii.</p>
+        </div>
+
+        <div class="wz-service-card">
+          <div class="wz-service-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#f4a63c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="12" rx="2"></rect>
+              <path d="M8 20h8M12 16v4"></path>
+              <circle cx="9" cy="10" r="1.4"></circle>
+              <circle cx="15" cy="10" r="1.4"></circle>
+            </svg>
+          </div>
+          <h3 class="wz-service-title">Automatyka budynkowa</h3>
+          <p class="wz-service-desc">Inteligentne sterowanie oświetleniem, ogrzewaniem i roletami. Wygoda, bezpieczeństwo i oszczędność energii.</p>
+        </div>
+
+        <div class="wz-service-card">
+          <div class="wz-service-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#f4a63c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 11l9-7 9 7"></path>
+              <path d="M5 10v10h14V10"></path>
+              <path d="M10 20v-6h4v6"></path>
+            </svg>
+          </div>
+          <h3 class="wz-service-title">Smart home Ampio</h3>
+          <p class="wz-service-desc">Jako autoryzowany instalator Ampio wdrażamy niezawodne, w pełni zintegrowane systemy inteligentnego budynku.</p>
+        </div>
+
+        <div class="wz-service-card">
+          <div class="wz-service-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#f4a63c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 18h10v-3H4z"></path>
+              <path d="M14 15l3-8 4 2-2 6"></path>
+              <circle cx="6" cy="20" r="1.6"></circle>
+              <circle cx="11" cy="20" r="1.6"></circle>
+            </svg>
+          </div>
+          <h3 class="wz-service-title">Usługi minikoparką</h3>
+          <p class="wz-service-desc">Wykopy pod instalacje, przyłącza i fundamenty. Nowoczesny sprzęt Hitachi — także na trudnym terenie.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ AMPIO BAND ============ -->
+  <section id="ampio" class="wz-section wz-section-light">
+    <div class="wz-container wz-ampio-grid">
+      <div>
+        <div class="wz-ampio-logo-card">
+          <img src="assets/ampio-logo.webp" alt="Ampio">
+        </div>
+      </div>
+      <div>
+        <div class="wz-badge-coral">Autoryzowany instalator</div>
+        <h2 class="wz-h2 small">Inteligentne systemy sterowania budynkiem Ampio.</h2>
+        <p class="wz-ampio-copy">Jako autoryzowany instalator Ampio zapewniamy profesjonalny montaż i konfigurację automatyki budynkowej — oświetlenie, ogrzewanie, rolety, sceny i pełna integracja smart home w jednym, niezawodnym systemie.</p>
+        <div class="wz-checklist">
+          <div class="wz-check-item"><span class="wz-check-mark">✓</span>Profesjonalny montaż i konfiguracja systemu</div>
+          <div class="wz-check-item"><span class="wz-check-mark">✓</span>Oświetlenie, ogrzewanie, rolety i sceny w jednym panelu</div>
+          <div class="wz-check-item"><span class="wz-check-mark">✓</span>Sterowanie z telefonu, panelu lub głosowo</div>
+          <div class="wz-check-item"><span class="wz-check-mark">✓</span>Niezawodność potwierdzona autoryzacją Ampio</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MINIKOPARKA ============ -->
+  <section id="minikoparka" class="wz-section wz-section-dark">
+    <div class="wz-container wz-mk-grid">
+      <div>
+        <div class="wz-eyebrow">Dodatkowo w ofercie</div>
+        <h2 class="wz-h2" style="margin-bottom:20px;">Usługi minikoparką — nowy sprzęt.</h2>
+        <p class="wz-mk-copy">Wykopy pod instalacje, przyłącza, fundamenty i uziemienia. Dysponujemy nowoczesną minikoparką Hitachi — sprawnie i precyzyjnie także na trudnym terenie.</p>
+        <div class="wz-btn-row">
+          <a href="tel:+48501666990" class="wz-btn-primary compact">501 666 990</a>
+          <a href="tel:+48575860310" class="wz-btn-secondary compact">575 860 310</a>
+        </div>
+      </div>
+      <div>
+        <img src="assets/minikoparka.jpg" alt="Usługi minikoparką — nowy sprzęt Hitachi" class="wz-mk-photo">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ O FIRMIE + ZESPÓŁ ============ -->
+  <section id="firma" class="wz-section wz-section-light">
+    <div class="wz-container wz-aboutgrid">
+      <div>
+        <img src="assets/wirzak-logo-black.png" alt="WIR&amp;ZAK" class="wz-about-logo">
+        <div class="wz-eyebrow coral">O firmie</div>
+        <h2 class="wz-h2 small" style="margin-bottom:20px;">Solidny partner w instalacjach elektrycznych.</h2>
+        <p class="wz-about-copy">Działamy w Szczecinie i okolicach od 2020 roku. Obsługujemy zarówno niewielkie domy jednorodzinne, jak i większe inwestycje — obiekty komercyjne, przemysłowe oraz hale wymagające zaawansowanych rozwiązań technicznych.</p>
+        <p class="wz-about-copy">Stawiamy na jakość wykonania, doświadczenie i nowoczesne technologie.</p>
+      </div>
+      <div class="wz-team-grid">
+
+        <div class="wz-team-card">
+          <div class="wz-team-photo">
+            <div class="wz-team-photo-placeholder">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#9a958a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"></circle><path d="M4 20c0-4 3.6-6 8-6s8 2 8 6"></path></svg>
+              <span>Zdjęcie —<br>Grzegorz Wiraszka</span>
+            </div>
+          </div>
+          <div class="wz-team-body">
+            <div class="wz-team-name">Grzegorz Wiraszka</div>
+            <div class="wz-team-role">Wspólnik · Zarząd</div>
+          </div>
+        </div>
+
+        <div class="wz-team-card">
+          <div class="wz-team-photo">
+            <div class="wz-team-photo-placeholder">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#9a958a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"></circle><path d="M4 20c0-4 3.6-6 8-6s8 2 8 6"></path></svg>
+              <span>Zdjęcie —<br>Arkadiusz Zakrocki</span>
+            </div>
+          </div>
+          <div class="wz-team-body">
+            <div class="wz-team-name">Arkadiusz Zakrocki</div>
+            <div class="wz-team-role">Wspólnik · Zarząd</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ KONTAKT ============ -->
+  <section id="kontakt" class="wz-section wz-section-dark">
+    <div class="wz-container wz-contact-grid">
+      <div>
+        <div class="wz-eyebrow">Kontakt</div>
+        <h2 class="wz-h2 wz-contact-h2">Porozmawiajmy o Twojej instalacji.</h2>
+        <p class="wz-contact-lead">Zadzwoń lub napisz — przygotujemy bezpłatną, niezobowiązującą wycenę dopasowaną do Twojego projektu.</p>
+      </div>
+      <div class="wz-contact-cards">
+        <a href="tel:+48501666990" class="wz-contact-card">
+          <div><div class="wz-contact-card-label">Telefon</div><div class="wz-contact-card-value">501 666 990</div></div>
+          <span class="wz-contact-card-arrow">→</span>
+        </a>
+        <a href="tel:+48575860310" class="wz-contact-card">
+          <div><div class="wz-contact-card-label">Telefon</div><div class="wz-contact-card-value">575 860 310</div></div>
+          <span class="wz-contact-card-arrow">→</span>
+        </a>
+        <a href="mailto:wirizak@gmail.com" class="wz-contact-card">
+          <div><div class="wz-contact-card-label">E-mail</div><div class="wz-contact-card-value small">wirizak@gmail.com</div></div>
+          <span class="wz-contact-card-arrow">→</span>
+        </a>
+        <div class="wz-contact-card">
+          <div><div class="wz-contact-card-label">Siedziba</div><div class="wz-contact-card-value smaller">ul. Brylantowa 4, 70-895 Szczecin</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER + DANE REJESTROWE ============ -->
+  <footer class="wz-footer">
+    <div class="wz-container">
+      <div class="wz-footer-top">
+        <img src="assets/wirzak-logo-white.png" alt="WIR&amp;ZAK" class="wz-footer-logo">
+        <nav class="wz-footer-nav">
+          <a href="#uslugi">Usługi</a>
+          <a href="#ampio">Ampio</a>
+          <a href="#minikoparka">Minikoparka</a>
+          <a href="#firma">O firmie</a>
           <a href="#kontakt">Kontakt</a>
-          <span>NIP: 9552543252</span>
-          <span>KRS: 0000852215</span>
-        </div>
-        <div>
-          <h4>Kontakt</h4>
-          <a href="tel:+48501666990">501 666 990</a>
-          <a href="tel:+48575860310">575 860 310</a>
-          <a href="mailto:wirizak@gmail.com">wirizak@gmail.com</a>
-          <span>ul. Brylantowa 4, Szczecin</span>
-        </div>
+        </nav>
       </div>
-    </div>
-    <div class="footer__bottom container">
-      <span>© <span id="year"></span> WIR&amp;ZAK Sp. z o.o. Wszelkie prawa zastrzeżone.</span>
-      <span class="footer__ampio">Autoryzowany instalator <img src="assets/logo-ampio.svg" alt="Ampio"></span>
+      <div class="wz-datagrid">
+        <div><div class="wz-data-label">Pełna nazwa</div><div class="wz-data-value">WIR&amp;ZAK Sp. z o.o.</div></div>
+        <div><div class="wz-data-label">KRS</div><div class="wz-data-value">0000852215</div></div>
+        <div><div class="wz-data-label">NIP</div><div class="wz-data-value">9552543252</div></div>
+        <div><div class="wz-data-label">REGON</div><div class="wz-data-value">386630390</div></div>
+        <div><div class="wz-data-label">Siedziba</div><div class="wz-data-value">ul. Brylantowa 4<br>70-895 Szczecin</div></div>
+        <div><div class="wz-data-label">PKD</div><div class="wz-data-value">43.21.Z — instalacje elektryczne</div></div>
+        <div><div class="wz-data-label">Data rejestracji</div><div class="wz-data-value">28.07.2020</div></div>
+        <div><div class="wz-data-label">Status</div><div class="wz-data-value status"><span class="wz-status-dot"></span>Aktywna</div></div>
+      </div>
+      <div class="wz-copyright">© 2026 WIR&amp;ZAK Sp. z o.o. · Elektryka &amp; automatyka budynkowa · Szczecin</div>
     </div>
   </footer>
 
-  <a href="#hero" class="totop" id="toTop" aria-label="Do góry">↑</a>
-
-  <script src="script.js"></script>
+</div>
 </body>
 </html>
